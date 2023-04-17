@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encripta</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="resources/Vector.png">
+</head>
+<body>
+
+  <img src="resources/Vector.png" alt="Logo" id="logo">
+  
+  <div class="one">
+        
+        <textarea id="entrance" name="mensaje" placeholder="Ingrese el texto aquí" rows="4" cols="10"></textarea>
+      
+        <input type="button" id="encrypt" value="Encriptar"/>
+        <input type="button" id="decrypt" value="Descrifrar"/>
+        <p id="aviso">Solo letras minúsculas y sin acentos</p>
+        <img src="resources/!.png" alt="admiracion" id="admira">
+  </div>      
+  <div id="two">
+   
+  <p id="miDiv"></p>
+  <button id="copy" onclick="copiarTexto()">Copiar texto</button>
+  </div>
+<div id="three">
+    <img src="resources/ontas.png" alt="Ontas" id="ontas">  
+    <h3 >Ningún mensaje fue encontrado</h3>
+    <p id="temporal">Ingresa el texto que desees encriptar o desencriptar.</p>
+</div>
+
+    <script>
+
+        function copiarTexto() {
+        let texto = document.getElementById("miDiv").innerHTML;
+        navigator.clipboard.writeText(texto);
+        
+        }
+
+
+        function verificar()
+        {   
+            //tomamos el valor del text-box
+           
+           return nombre= document.querySelector('#entrance').value;
+        }
+        //encriptamos
+            
+        function encrypthis(){
+            document.getElementById("three").style.display = "none";
+            var nombre = verificar();
+            var nuevaCadena = nombre.replace(/[a/e/i/o/u]/g,function(match){
+
+                switch(match){
+                    case "a":
+                        return "ai";
+                    case "e":
+                        return "enter";
+                    case "i":
+                        return "imes";
+                    case "o":
+                        return "ober";
+                    case "u":
+                        return "ufat";   
+                    default:
+                        return match;            
+                }
+
+            });
+            
+  
+            document.getElementById("miDiv").innerHTML = nuevaCadena;    
+            }       
+             //desencriptar    
+
+        function decrypthis(){
+            document.getElementById("three").style.display = "none";
+            let nombre = verificar();
+            let nuevaCadena = nombre.replace(/ai|enter|imes|ober|ufat/g, function(match) {
+            switch (match) {
+                case "ai":
+                    return "a";
+                case "enter":
+                    return "e";
+                case "imes":
+                    return "i";
+                case "ober":
+                    return "o";
+                case "ufat":
+                    return "u";           
+            
+            default:
+            return match;
+                 }
+            }
+             
+            );
+            document.getElementById("miDiv").innerHTML = nuevaCadena;
+        }
+
+        //llamamos la funcion con el boton
+        document.addEventListener("DOMContentLoaded", function() {
+        var miBoton = document.getElementById("encrypt");
+        var miBoton2 =document.getElementById("decrypt");    
+        miBoton.onclick = encrypthis;
+        miBoton2.onclick = decrypthis;
+          
+      });
+
+
+
+    </script>
+
+
+</body>
+</html>

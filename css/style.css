@@ -1,0 +1,351 @@
+body{
+
+    background-color: #f3f5fc;
+}
+.one {
+
+    position: absolute;
+    top: 0%;
+    width: 70%;
+    left: 0%;
+    height: 100%;
+  
+}
+
+#two {
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    height: 90%;
+    left: 68%;
+    background-color: #ffff;
+    border-radius: 20px;
+    padding: 20px;
+    word-wrap: break-word;
+    overflow: auto;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 110%;
+   
+}
+#three{
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    height: 75%;
+    left: 68%;
+    background-color: #ffff;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 110%;
+    color: #343A40;
+    padding-top: 8%;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: block;
+    
+}
+
+
+#decrypt {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    width: 32%;
+    height: 10%;
+    position: absolute; 
+    top: 85%;
+    left: 60%;
+    border-radius: 20px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0A3871;
+    background-color: #EFF1FA;
+
+}
+
+#encrypt {
+    border: 20px;
+    width: 32%;
+    height: 10%;
+    position: absolute; 
+    top: 85%;
+    left: 20%;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0A3871;
+
+}
+#copy{
+    border: 1px solid #0A3871;
+    width: 75%;
+    height: 10%;
+    position: absolute; 
+    top: 83%;
+    left: 15%;
+    border-radius: 20px;
+    color: #0A3871;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EFF1FA;
+}
+
+#entrance{
+    position: absolute;
+    width: 77%;
+    left: 20%;
+    top: 40%;
+    bottom: 25%;
+    border: none;
+    outline: none;
+    background-color: #f3f5fc;
+    margin-top: -20%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0A3871;
+    font-size: 200%;
+}
+#entrance::placeholder{
+    color: #0A3871;
+}
+
+
+#logo {
+    position: absolute;
+    left: 8%;
+}
+
+#aviso {
+    color: gray;
+    position: absolute;
+    top: 76%;
+    left: 22%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+
+}
+#admira{
+    position: absolute;
+    top:78%;
+    left: 20%;
+}
+#temporal{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+
+@media (max-width: 768px)   
+{
+   .one{
+    position: absolute;
+    top: 10%;
+   }
+    #two{
+        position:absolute;
+        top: 190%;
+        left: 3%;
+        height: 88%;
+        font-size: 180%;
+    
+    }
+    #three{
+        position:absolute;
+        top: 190%;
+        left: 3%;
+        height: 80%;
+        border-radius: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 130%;
+        color: #343A40;
+        padding-top: 1%;
+        padding-left: 27%;
+        padding-right: 2%;
+        padding-bottom: 10%;
+        display: block;
+    }
+    #ontas{
+        position: absolute;
+        left: 30%;
+        top: 1%;
+        width: 40%;
+        height: 60%;
+    }
+    h3{
+        
+        position: absolute;
+        top: 60%;
+        left: 25%;
+    }
+    #temporal{
+        position: absolute;
+        top: 72%;
+        left: 17%;  
+    }
+    #copy{
+        border: 1px solid #0A3871;
+        width: 75%;
+        height: 28%;
+        position: absolute; 
+        top: 63%;
+        left: 15%;
+        border-radius: 20px;
+        color: #0A3871;
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #EFF1FA;
+        
+    }
+    #encrypt{
+        border: 20px;
+        width: 67%;
+        height: 12%;
+        position: absolute; 
+        top: 140%;
+        left: 3%;
+        border-radius: 20px;
+        color: #ffffff;
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #0A3871;
+    }
+    #decrypt{
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        width: 67%;
+        height: 12%;
+        position: absolute; 
+        top: 140%;
+        left: 73%;
+        border-radius: 20px;
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #0A3871;
+        background-color: #EFF1FA;
+    
+    }
+    #entrance{
+        position: absolute;
+        width: 135%;
+        left: 3%;
+        top: 30%;
+        bottom: -20%;
+        background-color: #f3f5fc;
+        margin-top: -20%;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #0A3871;
+        font-size: 220%;
+    }
+    #entrance::placeholder{
+        color: #0A3871;
+    }
+    #logo{
+        position: absolute;
+        left: 3%;
+        top: 0%;
+        
+    }
+    #admira{
+        position: absolute;
+        top: 129%;
+        left: 6%;
+
+    }
+   #aviso{
+    position: absolute;
+    top: 126%;
+    left: 10%;
+    font-size: large;
+
+   } 
+}
+
+@media (max-width:375px){
+ 
+    #two{
+        position: absolute;
+        top: 110%;
+        right: 3%;
+        height: 36%;
+        left: 3%;
+        background-color: #ffff;
+        border-radius: 20px;
+        padding: 20px;
+        word-wrap: break-word;
+        overflow: auto;
+        color: rgb(0, 0, 0);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 110%;
+
+    }
+    #three{
+        position: absolute;
+        top: 110%;
+        right: 3%;
+        height: 36%;
+        left: 3%;
+        background-color: #ffff;
+        border-radius: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 110%;
+        color: #343A40;
+        padding-top: 8%;
+        padding-left: 2%;
+        padding-right: 2%;
+        display: block;
+    }        
+
+    
+
+    #entrance{
+        position: absolute;
+        top:26%;
+        left: 0%;
+        right: 0%;
+        bottom:50%;
+        font-size: large;
+    }
+    #encrypt{
+        position: absolute;
+        top: 60%;
+        height: 10%;
+        width: 130%;
+    }
+    #decrypt{
+        position: absolute;
+        top: 75%;
+        height: 10%;
+        width: 130%;
+        left: 3%;
+    }
+    #copy{
+        position: relative;
+        width: 93%;
+        height: 26%;
+        left: 0%;
+    }
+    #admira{
+        position: absolute;
+        top: 56.5%;
+    }
+    #aviso{
+        position: absolute;
+        top: 54%;
+        left: 15%;
+        font-size: small;
+    }
+    #ontas{
+        display: none;
+    }
+    #temporal{
+        position: absolute;
+        top: 40%;
+        left: 0%;
+    }
+    h3{
+        position: absolute;
+        top: 10%;
+        left: 6%;
+    }
+}
